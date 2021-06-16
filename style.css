@@ -1,0 +1,287 @@
+body{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    height: 100vh  !important;
+    color: darkslategray;
+    font-family: 'Open Sans', sans-serif;
+}
+/* clases que se repiten */
+.btn-rojo{
+    text-decoration: none;
+    align-self: center;
+    color:whitesmoke;
+    font-size: 0.8rem; 
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: firebrick;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    display: inline-block;
+    align-self: center;
+    margin-bottom: 1rem;
+}
+    /* aplica para flexbox  */    
+}
+.linea {
+    width: 8rem;
+    border-color: firebrick ;
+    border-style: inset;
+    
+}
+.linea2 {
+    width: 8rem;
+    border-color: firebrick ;
+    border-style: inset;
+    margin-left: 0;
+    margin-bottom: 3rem;
+}
+#primera-seccion{
+    background: linear-gradient(rgba(68, 13, 13, 0.35),rgba(38, 2, 2,0.446)), url(./assets/fondos/primera_seccion/fondo-primera.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: white;
+/* background:  url(./assets/fondos/primera_seccion/fondo-primera.jpg) no-repeat center/cover;
+background-attachment: fixed;
+height: 100vh;
+color: rgb(238, 232, 232); */
+} 
+#barra-navegacion{
+    display: flex;
+    flex-direction:row ;
+    justify-content:space-between ;
+    margin: auto 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem ; 
+}  
+#logo{
+    margin: 0;
+    text-transform: uppercase;
+     font-weight: 700 ;
+     font-stretch: normal;
+
+}
+nav > a {
+text-decoration: none;
+color: floralwhite;
+padding-left: 1rem;
+padding-right: 1rem;
+}
+nav > a:hover{
+    color:  rgb(236, 93, 93);
+
+}
+#primera-seccion-contenido {
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#primera-seccion-contenido > p {
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+/* #primera-seccion-contenido > hr {
+width: 8rem;
+color: lawngreen; */
+
+#primera-seccion-contenido > h1{
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+    padding: 1rem;
+}
+#segunda-seccion-contenido{
+margin: auto;
+display: flex; 
+flex-direction: column;
+width: 80%;
+padding-top: 5rem;
+}
+#titulo {
+    margin-bottom: 3rem;
+}
+#titulo > h2 {
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+
+}
+#container-segunda-secccion{
+    text-align: center;
+    display: flex; 
+    flex-direction: row;
+
+}
+.img-segunda-seccion{
+    padding: left 1rem;
+    padding-right: 1rem;
+
+}
+.img-segunda-seccion > h6{
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+.img-segunda-seccion > p{
+    margin-bottom: 1rem;
+}
+.img-segunda-seccion > img {
+    max-width: 100%;
+}
+#tercera-seccion-contenido{
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0,0.905)), url(./assets/fondos/cuarta_seccion/fondo_cuarta.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;  
+}
+#contenedor{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+.mitad { 
+width: 50%;
+}
+#tercera-seccion-der > h3 {
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+#tercera-seccion-der > p {
+    margin-bottom: 4rem;
+}
+#cuarta-seccion {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+#cuarta-seccion-izquierda {
+    flex: 1rem;
+}
+#cuarta-seccion-izquierda > h3 {
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.0rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+#cuarta-seccion-izquierda > p {
+    margin-bottom: 4rem;
+}
+#cuarta-seccion-derecha {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px 10px;
+    justify-items: center;
+    align-items: center;
+    
+}
+#cuarta-seccion-derecha > img {
+    max-width: 100%;
+     
+}
+footer {
+    background-color: rgb(29, 28, 28);
+    color: whitesmoke;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+@media (max-width:522px) {
+    #primera-seccion {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    #barra-navegacion {
+    display: flex;
+    flex-direction:column ;
+    justify-content:center ;
+    margin: auto ;
+    padding-top: 2rem;
+    padding-bottom: 0 ;                
+    }
+    #barra-navegacion > p, nav {
+    text-align: center;
+    }
+    #primera-seccion-contenido {
+        margin-top: 2.5rem;
+    }
+    #primera-seccion-contenido > h1{
+        font-size: 2.5rem;
+    }
+    #segunda-seccion-contenido {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        width: 90%;
+
+    }
+    #container-segunda-secccion {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .img-segunda-seccion {
+        margin-bottom: 2rem;
+    }
+    .img-segunda-seccion > img {
+        max-width: 100%;
+    }
+    #tercera-seccion-izq {
+        display: none;
+
+    }
+    #tercera-seccion-der {
+        width: 100%;
+    }
+    #cuarta-seccion-derecha { 
+        flex: 2;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 15px 10px;
+        justify-items: center;
+        align-items: center;
+    }
+    #cuarta-seccion{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    #cuarta-seccion-derecha {
+        flex: 1;
+        display: grid;
+        grid-template-rows: repeat(4,1fr);
+        grid-template-columns: 1fr;
+        gap:  15px 10px;
+        justify-items: center;
+        align-items: center;
+    }
+
+}
